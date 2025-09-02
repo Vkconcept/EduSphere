@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Component/Navbar";
 import Home from "./Page/Home";
 import About from "./Page/About";
@@ -10,7 +10,7 @@ import Login from "./Page/Login";
 
 const App = () => {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +22,7 @@ const App = () => {
       <Admission />
       <Contact />
       <Footer />
-    </Router>
+    </>
   );
 };
 
